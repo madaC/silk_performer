@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SummaryReport versionMajor="21" versionMinor="0">
+  <Benchmark>WebProject_1</Benchmark>
+  <WorkloadType>3</WorkloadType>
+  <WorkloadName>Workload1</WorkloadName>
+  <StartTimeUTC>1700141598</StartTimeUTC>
+  <MeasureReport>
+    <Measure>
+      <Name>Virtual Users</Name>
+      <Type>sum</Type>
+      <Value>1</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Virtual Users Executed</Name>
+      <Type>sum</Type>
+      <Value>1</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Cloud Virtual Users Executed</Name>
+      <Type>sum</Type>
+      <Value>0</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Agents Executed</Name>
+      <Type>sum</Type>
+      <Value>1</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Cloud Agents Executed</Name>
+      <Type>sum</Type>
+      <Value>0</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Middlewares Executed</Name>
+      <Type>bitmask</Type>
+      <Value>00061000</Value>
+    </Measure>
+    <Measure>
+      <Name>Cloud Middlewares Executed</Name>
+      <Type>bitmask</Type>
+      <Value>00000000</Value>
+    </Measure>
+    <Measure>
+      <Name>Successful Transactions</Name>
+      <Type>sum</Type>
+      <Value>1</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Failed Transactions</Name>
+      <Type>sum</Type>
+      <Value>1</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Errors</Name>
+      <Type>sum</Type>
+      <Value>8</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Connect Retries</Name>
+      <Type>sum</Type>
+      <Value>0</Value>
+      <Min />
+      <Max />
+      <StDev />
+      <Unit>[1]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Transaction Response Time</Name>
+      <Type>avg</Type>
+      <Value>0.000000</Value>
+      <Min>0.000000</Min>
+      <Max>0.000000</Max>
+      <StDev>0.000000</StDev>
+      <Unit>[Seconds]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Web Form Server Busy Time</Name>
+      <Type>avg</Type>
+      <Value>0.000309</Value>
+      <Min>0.000017</Min>
+      <Max>0.000719</Max>
+      <StDev>0.000093</StDev>
+      <Unit>[Seconds]</Unit>
+    </Measure>
+    <Measure>
+      <Name>Web Form Round Trip Time</Name>
+      <Type>avg</Type>
+      <Value>0.000354</Value>
+      <Min>0.000033</Min>
+      <Max>0.000731</Max>
+      <StDev>0.000124</StDev>
+      <Unit>[Seconds]</Unit>
+    </Measure>
+  </MeasureReport>
+  <ErrorReport>
+    <Error>
+      <Errortext>WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/relations")</Errortext>
+    </Error>
+  </ErrorReport>
+</SummaryReport>

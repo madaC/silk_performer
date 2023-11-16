@@ -1,0 +1,771 @@
+// ----------------------------------------------------------------------
+// Generated 16.11.2023 from 'WebProject_2..spcap'
+// by Silk Performer Recorder v21.0.0.8927 Patch 5
+// ----------------------------------------------------------------------
+//  * Rule "Excluding browser-specific domains"
+// Excluding proprietary TCP/IP traffic
+// Excluding UDP traffic
+// Rule set "ASP.NET ViewState"
+//  * Rule "Parse and Replace __VIEWSTATE"
+//  * Rule "Parse and Replace __EVENTVALIDATION"
+// ----------------------------------------------------------------------
+
+@codepage(1252)
+
+benchmark SilkPerformerRecorder
+
+use "WebAPI.bdh"
+
+dcluser
+  user
+    VUser
+  transactions
+    TInit           : begin;
+    TMain           : 1;
+
+var
+
+dclrand
+
+dcltrans
+  transaction TInit
+  begin
+    WebSetBrowser(WEB_BROWSER_CHROME);
+    WebModifyHttpHeader("Accept-Language", "de-DE,de;q=0.9");
+    //WebSetUserBehavior(WEB_USERBEHAVIOR_FIRST_TIME);
+    //WebSetDocumentCache(true, WEB_CACHE_CHECK_SESSION);
+  end TInit;
+
+  transaction TMain
+  var
+    hWebStoredCtx_Login : number;
+  begin
+    TrueLogSection("Start Recording");
+    WebUrl("http://autocache.softwaregrp.net/", 0.00);
+    WebModifyHttpHeader("Accept-Language", "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7");
+    WebUrl("http://autocache.softwaregrp.net/", 0.00);
+    WebModifyHttpHeader("Accept-Language", NULL, WEB_MODIFY_OPT_Remove);
+    WebUrl("http://autocache.softwaregrp.net/", 0.71);
+ 
+    SetEncoding("UTF-8");
+ 
+    WebCookieSet(
+      "AWSALB=J220FWlUXDtDdfCRi7+/WUnz5ts7fCQqW5qKwmBTv0QIi212B+dIOUlBhJBeWYxK2tzHQaUrzwb3JE3ijOjtgLqXsfNlfIrryR8jx22Ml35LzoNJi"
+      "SAv/IlU8ehX; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/css/fonts/cache/OpenSans-Regular.ttf", 2);
+    WebCookieSet(
+      "AWSALBCORS=J220FWlUXDtDdfCRi7+/WUnz5ts7fCQqW5qKwmBTv0QIi212B+dIOUlBhJBeWYxK2tzHQaUrzwb3JE3ijOjtgLqXsfNlfIrryR8jx22Ml35Lz"
+      "oNJiSAv/IlU8ehX; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/css/fonts/cache/OpenSans-Regular.ttf", 2);
+    WebPageAddUrl("../css/fonts/cache/OpenSans-Regular.ttf");
+    WebPageAddUrl("../css/fonts/icomoon.ttf", MSG_CSS_FONTS_ICOMOON_TTF002);
+    WebCookieSet(
+      "AWSALB=J220FWlUXDtDdfCRi7+/WUnz5ts7fCQqW5qKwmBTv0QIi212B+dIOUlBhJBeWYxK2tzHQaUrzwb3JE3ijOjtgLqXsfNlfIrryR8jx22Ml35LzoNJi"
+      "SAv/IlU8ehX; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/css/fonts/OpenSans-Bold.ttf", 2);
+    WebCookieSet(
+      "AWSALBCORS=J220FWlUXDtDdfCRi7+/WUnz5ts7fCQqW5qKwmBTv0QIi212B+dIOUlBhJBeWYxK2tzHQaUrzwb3JE3ijOjtgLqXsfNlfIrryR8jx22Ml35Lz"
+      "oNJiSAv/IlU8ehX; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/css/fonts/OpenSans-Bold.ttf", 2);
+    WebPageAddUrl("../css/fonts/OpenSans-Bold.ttf");
+    WebPageAddUrl("../js/lib/emailValidator.js", MSG_JS_LIB_EMAILVALIDATOR_JS003);
+    WebPageAddUrl("../public/getProdName", MSG_PUBLIC_GETPRODNAME004);
+    WebPageAddUrl("../img/pronq/favicon.ico");
+    WebModifyHttpHeader("Accept-Language", "de-DE,de;q=0.9");
+    WebCookieSet(
+      "AWSALB=nR7ifXRe0o+jz5B0Q4iLFTAwyzHBNXvqHnzVw030TRJP92+7s1ormTbYpjvut2+SJnPGHx0p4h1ZICXh/r0ApPP/EXjDTdy82ciU1egKj64pTBV0w"
+      "M7UghEPNO4i; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/js/lib/cache/jquery1.8.3/jquery.min.js", 2);
+    WebCookieSet(
+      "AWSALBCORS=nR7ifXRe0o+jz5B0Q4iLFTAwyzHBNXvqHnzVw030TRJP92+7s1ormTbYpjvut2+SJnPGHx0p4h1ZICXh/r0ApPP/EXjDTdy82ciU1egKj64pT"
+      "BV0wM7UghEPNO4i; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/js/lib/cache/jquery1.8.3/jquery.min.js", 2);
+    WebCookieSet(
+      "AWSALB=nR7ifXRe0o+jz5B0Q4iLFTAwyzHBNXvqHnzVw030TRJP92+7s1ormTbYpjvut2+SJnPGHx0p4h1ZICXh/r0ApPP/EXjDTdy82ciU1egKj64pTBV0w"
+      "M7UghEPNO4i; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/js/pronq/smart-login.js", 2);
+    WebCookieSet(
+      "AWSALBCORS=nR7ifXRe0o+jz5B0Q4iLFTAwyzHBNXvqHnzVw030TRJP92+7s1ormTbYpjvut2+SJnPGHx0p4h1ZICXh/r0ApPP/EXjDTdy82ciU1egKj64pT"
+      "BV0wM7UghEPNO4i; domain=.ct-shared.saas.microfocus.com; path=/; expires=Thu, 23 Nov 2023 13:29:16 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/js/pronq/smart-login.js", 2);
+    WebPageUrl("https://pmo7.almoctane.com/ui/", "Login", UI_001);
+    WebPageStoreContext(hWebStoredCtx_Login);
+ 
+    TrueLogSection("Click", "", "Screenshot_1571461");
+ 
+    WebPageSetActionUrlAbs("https://msg-ext.ct-shared.saas.microfocus.com/msg/public/federate");
+    ThinkTime(16.6);
+    WebPageSubmit("loginForm", LOGINFORM005, "federate"); // Form 1
+ 
+    TrueLogSection("Click", "", "Screenshot_1576679");
+ 
+    WebPageBack();
+ 
+    WebPageAddUrl("generated/webpack/fonts/9549360090baf2eb8b25d3a9708fc19d.roboto-v20-latin-ext_cyrillic_latin-regular.woff2");
+    WebCookieSet("i18next=english; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:38 GMT", 
+      "https://pmo7.almoctane.com/ui/generated/webpack/platform-module-templates.b858c0fbff41d4a93bad.min.js", 2);
+    WebCookieSet("_ga=GA1.1.310559645.1700141378; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:38 GMT", 
+      "https://pmo7.almoctane.com/ui/generated/webpack/platform-module-templates.b858c0fbff41d4a93bad.min.js", 2);
+    WebCookieSet(
+      "_ga_ETCHLMRC87=GS1.1.1700141378.1.0.1700141378.0.0.0; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:38 G"
+      "MT", "https://pmo7.almoctane.com/ui/generated/webpack/platform-module-templates.b858c0fbff41d4a93bad.min.js", 2);
+    WebPageAddUrl("generated/webpack/platform-module-templates.b858c0fbff41d4a93bad.min.js");
+    WebPageAddUrl("generated/webpack/froala-editor.4079e49fe1d16ccdc55c.min.css");
+    WebPageAddUrl("generated/webpack/froala-editor.03dcb1066aadaee049a2.bundle.min.js");
+    WebPageAddUrl("/octane-sw.js", OCTANE_SW_JS008);
+    WebPageAddUrl("generated/webpack/issues.168129726431f14ab5f5.bundle.min.js");
+    WebCookieSet(
+      "_ga_ETCHLMRC87=GS1.1.1700141378.1.1.1700141387.0.0.0; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:47 G"
+      "MT", 
+      "https://pmo7.almoctane.com/ui/generated/webpack/octane_server_notifications_worker.2296ecc66c79d946a067.bundle.min.worke"
+      "r.js", 2);
+    WebPageAddUrl("generated/webpack/octane_server_notifications_worker.2296ecc66c79d946a067.bundle.min.worker.js");
+    WebCookieSet(
+      "pronq_username=mqm_rnd@hpe.com; domain=.ct-shared.saas.microfocus.com; path=/msg/actions/doLogin.action;jsessionid=A3B96"
+      "12000ECCEC3EE887180463E70DF; expires=Wed, 16 Nov 2033 13:29:36 GMT", 
+      "https://msg-ext.ct-shared.saas.microfocus.com/msg/actions/doLogin.action;jsessionid=A3B9612000ECCEC3EE887180463E70DF");
+    WebCookieSet(
+      "JSESSIONID=node01etux07h2ibybzk79aoe6yv2r14.node0; domain=.almoctane.com; path=/ui/generated/webpack/common-platform; ex"
+      "pires=Wed, 16 Nov 2033 13:29:36 GMT", 
+      "https://pmo7.almoctane.com/ui/generated/webpack/common-platform-components.0023d8172b9d08d21166.bundle.min.js", 2);
+    ThinkTime(5.2);
+    WebPageSubmit("loginForm", LOGINFORM006, "default_workspace"); // Form 1
+ 
+    ThinkTime(3.6);
+    WebPageUrl("https://pmo7.almoctane.com/ui/generated/webpack/sprite.a6433cbacf82bbcf91bfea1c709106f9.svg", 
+      "sprite.a6433cbacf82bbcf91bfea1c709106f9.svg");
+ 
+    WebPageUrl("https://pmo7.almoctane.com/favicon_ve.svg", "favicon_ve.svg", FAVICON_VE_SVG007);
+ 
+    WebPageBack(3);
+ 
+    WebPageSetActionUrlAbs("https://region1.google-analytics.com/g/collect", G_COLLECT009);
+    WebPageSubmitBin("loginForm", "", STRING_COMPLETE, "<suppress>", "collect"); // Form 1
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/relations", "relations");
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/metadata/entities", "entities", 
+      API_SHARED_SPACES_1001_METADATA_010);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/entities", "entities (#1)");
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields", 
+      API_SHARED_SPACES_1001_WORKSPACE011);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/metadata/fields", "fields (#1)", 
+      API_SHARED_SPACES_1001_METADATA_012);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/form_layouts", "form_layouts", 
+      API_SHARED_SPACES_1001_WORKSPACE013);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/phases", "phases", 
+      API_SHARED_SPACES_1001_WORKSPACE014);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/transitions", "transitions", 
+      API_SHARED_SPACES_1001_WORKSPACE015);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metaphases", "metaphases", 
+      API_SHARED_SPACES_1001_WORKSPACE016);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/list_nodes/ui_bundle", "ui_bundle");
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/business_rules", "business_rules", 
+      API_SHARED_SPACES_1001_WORKSPACE017);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/roles", "roles", API_SHARED_SPACES_1001_ROLES018);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#2)", 
+      API_SHARED_SPACES_1001_WORKSPACE019);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#3)", 
+      API_SHARED_SPACES_1001_WORKSPACE020);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#4)", 
+      API_SHARED_SPACES_1001_WORKSPACE021);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#5)", 
+      API_SHARED_SPACES_1001_WORKSPACE022);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#6)", 
+      API_SHARED_SPACES_1001_WORKSPACE023);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#7)", 
+      API_SHARED_SPACES_1001_WORKSPACE024);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#8)", 
+      API_SHARED_SPACES_1001_WORKSPACE025);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#9)", 
+      API_SHARED_SPACES_1001_WORKSPACE026);
+ 
+    WebPageSetActionUrlAbs("https://region1.google-analytics.com/g/collect", G_COLLECT027);
+    WebPageSubmitBin("loginForm", "", STRING_COMPLETE, "<suppress>", "collect (#1)", 1, NULL, hWebStoredCtx_Login); // Form 1
+    WebPageDeleteContext(hWebStoredCtx_Login);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings", "user_settings", 
+      API_SHARED_SPACES_1001_WORKSPACE028);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#10)", 
+      API_SHARED_SPACES_1001_WORKSPACE029);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#11)", 
+      API_SHARED_SPACES_1001_WORKSPACE030);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#12)", 
+      API_SHARED_SPACES_1001_WORKSPACE031);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#13)", 
+      API_SHARED_SPACES_1001_WORKSPACE032);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#14)", 
+      API_SHARED_SPACES_1001_WORKSPACE033);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#15)", 
+      API_SHARED_SPACES_1001_WORKSPACE034);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#16)", 
+      API_SHARED_SPACES_1001_WORKSPACE035);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#17)", 
+      API_SHARED_SPACES_1001_WORKSPACE036);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#18)", 
+      API_SHARED_SPACES_1001_WORKSPACE037);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#19)", 
+      API_SHARED_SPACES_1001_WORKSPACE038);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#20)", 
+      API_SHARED_SPACES_1001_WORKSPACE039);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#21)", 
+      API_SHARED_SPACES_1001_WORKSPACE040);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#22)", 
+      API_SHARED_SPACES_1001_WORKSPACE041);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#23)", 
+      API_SHARED_SPACES_1001_WORKSPACE042);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#24)", 
+      API_SHARED_SPACES_1001_WORKSPACE043);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#25)", 
+      API_SHARED_SPACES_1001_WORKSPACE044);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#26)", 
+      API_SHARED_SPACES_1001_WORKSPACE045);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#27)", 
+      API_SHARED_SPACES_1001_WORKSPACE046);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#28)", 
+      API_SHARED_SPACES_1001_WORKSPACE047);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#29)", 
+      API_SHARED_SPACES_1001_WORKSPACE048);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#30)", 
+      API_SHARED_SPACES_1001_WORKSPACE049);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#31)", 
+      API_SHARED_SPACES_1001_WORKSPACE050);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#32)", 
+      API_SHARED_SPACES_1001_WORKSPACE051);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#33)", 
+      API_SHARED_SPACES_1001_WORKSPACE052);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#34)", 
+      API_SHARED_SPACES_1001_WORKSPACE053);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#35)", 
+      API_SHARED_SPACES_1001_WORKSPACE054);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#36)", 
+      API_SHARED_SPACES_1001_WORKSPACE055);
+ 
+    WebPageUrl(
+      "https://pmo7.almoctane.com/ui/platform/components/elastic-maintenance-warning-component/elastic-maintenance-warning-comp"
+      "onent.html", "elastic-maintenance-warning-component.html", UI_PLATFORM_COMPONENTS_ELASTIC_M056);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/service_statuses", "service_statuses", 
+      API_SHARED_SPACES_1001_SERVICE_S057);
+ 
+    WebPageAddUrl("/ui/generated/webpack/fonts/6f69d99b9b0706a2a955ed42d64742a1.roboto-v20-latin-ext_cyrillic_latin-500.woff2");
+    WebPageAddUrl("/ui/generated/webpack/fonts/f3501dc6e4b56028379328ddd8f0129f.roboto-v20-latin-ext_cyrillic_latin-700.woff2");
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/workspace_users/1001/avatar", "avatar", 
+      API_SHARED_SPACES_1001_WORKSPACE058);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/ui/platform/tour/views/sub-views/new-format-json-whats-new/whats-new-saas-en.json", 
+      "whats-new-saas-en.json", UI_PLATFORM_TOUR_VIEWS_SUB_VIEWS059);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#37)", 
+      API_SHARED_SPACES_1001_WORKSPACE060);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#38)", 
+      API_SHARED_SPACES_1001_WORKSPACE061);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", "fields (#39)", 
+      API_SHARED_SPACES_1001_WORKSPACE062);
+ 
+    WebPageAddUrl("/ui/generated/webpack/images/4ea9a25100b0e040b3d5f267132ee933.alm-global-elements.png");
+    WebPageUrl(
+      "https://pmo7.almoctane.com/ui/quality-center/release-details/bundle/directives/milestone-field-editor/milestone-field-ed"
+      "itor.html", "milestone-field-editor.html", UI_QUALITY_CENTER_RELEASE_DETAIL063);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/work_items", "work_items", 
+      API_SHARED_SPACES_1001_WORKSPACE064);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/workspace_users", "workspace_users", 
+      API_SHARED_SPACES_1001_WORKSPACE065);
+ 
+    WebPageUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/releases", "releases", 
+      API_SHARED_SPACES_1001_WORKSPACE066);
+ 
+    TrueLogSection("Click", "", "Screenshot_1594870");
+ 
+    ThinkTime(3.4);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE067, 0.00);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE068, 0.00);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE069, 0.00);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE070, 0.00);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE071, 0.81);
+    WebUrl("https://pmo7.almoctane.com/ui/generated/webpack/vulnerabilities.380c8d46001125feb317.bundle.min.js", 0.55);
+    WebCookieSet(
+      "_ga_ETCHLMRC87=GS1.1.1700141378.1.1.1700141393.0.0.0; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:54 G"
+      "MT", "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields");
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields", 
+      API_SHARED_SPACES_1001_WORKSPACE072, 0.00);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/issues", API_SHARED_SPACES_1001_WORKSPACE073, 
+      0.32);
+    WebFormGet("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/issues", API_SHARED_SPACES_1001_WORKSPACE074, 
+      3.65);
+ 
+    TrueLogSection("Click", "", "Screenshot_1600151");
+    WebCookieSet(
+      "_ga_ETCHLMRC87=GS1.1.1700141378.1.1.1700141397.0.0.0; domain=.almoctane.com; path=/; expires=Wed, 16 Nov 2033 13:29:58 G"
+      "MT", "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/notifications");
+    WebUrl("https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/notifications");
+  end TMain;
+
+dclform
+  UI_001:
+    "p"                         := "1001/1002";
+
+  MSG_CSS_FONTS_ICOMOON_TTF002:
+    ""                          := "k4ea4m";
+
+  MSG_JS_LIB_EMAILVALIDATOR_JS003:
+    "_"                         := "1700141356373";
+
+  MSG_PUBLIC_GETPRODNAME004:
+    "LWAP_REQ"                  := "16SfC0Zd8Xux73eUxqRKX1ESvPcSvk0DMSIB5bc0jZlf4UX4SB36GB_39GoR4V9fOBDGCoJZHGpeA18UJXKN-ROVDnc"
+                                   "9L8m8VTupWy6NjGClhZaGHWI7bjGz_Voem5pHOrbdncS4QUR7GjJ2zK6nrg..",
+    "MULTI_DOMAIN_REQ"          := "4c4CBpEGeEYnHdD4x655USTE7TgzMOGLkoI-ZXSOm6pyjTAYOEGTg1lzyXX_vJ7DCpQ3VJOpJQNMdo99hlm7J3NDnSQ"
+                                   "QnladGlkaAZp_Dk6PqLaGRKuvTMXoJ2mpNVWAAGWQIjlipdXVF3cNyBAXbnWqd-ucNJlWMEmLow84W9ZwplruMitb0a"
+                                   "LLdasOLBcp_fm8NkI5m2DkTCtC9KJ-Ug..",
+    "LWE"                       := "kFOKkSiHOzFQuUNv38QAzZ_yjYwZHXBkdhtUBa5M8dPho7iYiX81b6_gphT_dmj0D_56CvY91_hwvfoyb6QA4HiTUwo"
+                                   "TKpbmLvr2VJvTy6-DbFvnAMLYeGFcIqwZMRe3GHn8KE23CWhjVxHXZCp1L7LEQL8q_qMVJF6be3XvxP5-lrxyg9Nzrp"
+                                   "St8HmxrmAe";
+
+  LOGINFORM005 <ENCODE_URICOMPONENT> :
+    "urlToken"                  := "" <USE_HTML_VAL> , // hidden, unchanged, value: "false"
+    "tzoutc"                    := "" <SUPPRESS> , // hidden, suppressed, value: ""
+    "res"                       := "" <SUPPRESS> , // hidden, suppressed, value: ""
+    "bg"                        := "" <SUPPRESS> , // hidden, suppressed, value: ""
+    "username"                  := "" <SUPPRESS> , // suppressed, value: ""
+    "password"                  := "" <SUPPRESS> , // suppressed, value: ""
+    "targetResource"            := "" <USE_HTML_VAL> , // hidden, unchanged, value: "https://pmo7.almoctane.com/ui/?p=1001%2F100
+                                                       // 2"
+    "urlToken"                  := "" <SUPPRESS> , // hidden, suppressed, value: "false"
+    "LWAP_REQ"                  := "" <SUPPRESS> , // hidden, suppressed, value: "16SfC0Zd8Xux73eUxqRKX1ESvPcSvk0DMSIB5bc0jZlf4U
+                                                   // X4SB36GB_39GoR4V9fOBDGCoJZHGpeA18UJXKN-ROVDnc9L8m8VTupWy6NjGClhZaGHWI7bjGz
+                                                   // _Voem5pHOrbdncS4QUR7GjJ2zK6nrg.."
+    "MULTI_DOMAIN_REQ"          := "" <SUPPRESS> , // hidden, suppressed, value: "4c4CBpEGeEYnHdD4x655USTE7TgzMOGLkoI-ZXSOm6pyjT
+                                                   // AYOEGTg1lzyXX_vJ7DCpQ3VJOpJQNMdo99hlm7J3NDnSQQnladGlkaAZp_Dk6PqLaGRKuvTMXo
+                                                   // J2mpNVWAAGWQIjlipdXVF3cNyBAXbnWqd-ucNJlWMEmLow84W9ZwplruMitb0aLLdasOLBcp_f
+                                                   // m8NkI5m2DkTCtC9KJ-Ug.."
+    "federateLoginName"         := "mqm_rnd@hpe.com", // changed
+    "LWAP_REQ"                  := "" <USE_HTML_VAL> , // hidden, unchanged, value: "16SfC0Zd8Xux73eUxqRKX1ESvPcSvk0DMSIB5bc0jZl
+                                                       // f4UX4SB36GB_39GoR4V9fOBDGCoJZHGpeA18UJXKN-ROVDnc9L8m8VTupWy6NjGClhZaGH
+                                                       // WI7bjGz_Voem5pHOrbdncS4QUR7GjJ2zK6nrg.."
+    "MULTI_DOMAIN_REQ"          := "" <USE_HTML_VAL> , // hidden, unchanged, value: "4c4CBpEGeEYnHdD4x655USTE7TgzMOGLkoI-ZXSOm6p
+                                                       // yjTAYOEGTg1lzyXX_vJ7DCpQ3VJOpJQNMdo99hlm7J3NDnSQQnladGlkaAZp_Dk6PqLaGR
+                                                       // KuvTMXoJ2mpNVWAAGWQIjlipdXVF3cNyBAXbnWqd-ucNJlWMEmLow84W9ZwplruMitb0aL
+                                                       // LdasOLBcp_fm8NkI5m2DkTCtC9KJ-Ug.."
+    "hashlink"                  := "" <SUPPRESS> , // hidden, suppressed, value: ""
+    "LWE"                       := "" <USE_HTML_VAL> ; // hidden, unchanged, value: "kFOKkSiHOzFQuUNv38QAzZ_yjYwZHXBkdhtUBa5M8dP
+                                                       // ho7iYiX81b6_gphT_dmj0D_56CvY91_hwvfoyb6QA4HiTUwoTKpbmLvr2VJvTy6-DbFvnA
+                                                       // MLYeGFcIqwZMRe3GHn8KE23CWhjVxHXZCp1L7LEQL8q_qMVJF6be3XvxP5-lrxyg9NzrpS
+                                                       // t8HmxrmAe"
+
+  LOGINFORM006 <ENCODE_URICOMPONENT> :
+    "LWAP_REQ"                  := "" <USE_HTML_VAL> , // hidden, unchanged, value: "16SfC0Zd8Xux73eUxqRKX1ESvPcSvk0DMSIB5bc0jZl
+                                                       // f4UX4SB36GB_39GoR4V9fOBDGCoJZHGpeA18UJXKN-ROVDnc9L8m8VTupWy6NjGClhZaGH
+                                                       // WI7bjGz_Voem5pHOrbdncS4QUR7GjJ2zK6nrg.."
+    "MULTI_DOMAIN_REQ"          := "" <USE_HTML_VAL> , // hidden, unchanged, value: "4c4CBpEGeEYnHdD4x655USTE7TgzMOGLkoI-ZXSOm6p
+                                                       // yjTAYOEGTg1lzyXX_vJ7DCpQ3VJOpJQNMdo99hlm7J3NDnSQQnladGlkaAZp_Dk6PqLaGR
+                                                       // KuvTMXoJ2mpNVWAAGWQIjlipdXVF3cNyBAXbnWqd-ucNJlWMEmLow84W9ZwplruMitb0aL
+                                                       // LdasOLBcp_fm8NkI5m2DkTCtC9KJ-Ug.."
+    "hashlink"                  := "" <USE_HTML_VAL> , // hidden, unchanged, value: ""
+    "urlToken"                  := "" <USE_HTML_VAL> , // hidden, unchanged, value: "false"
+    "tzoutc"                    := "-60", // hidden, changed(!)
+    "res"                       := "1508*1039", // hidden, changed(!)
+    "bg"                        := "" <USE_HTML_VAL> , // hidden, unchanged, value: ""
+    "username"                  := "mqm_rnd@hpe.com", // changed
+    "password"                  := DecryptAES("hoQF86+YVNg//3SGrmRnrA=="), // changed
+    "targetResource"            := "" <SUPPRESS> , // hidden, suppressed, value: "https://pmo7.almoctane.com/ui/?p=1001/1002"
+    "urlToken"                  := "" <SUPPRESS> , // hidden, suppressed, value: "false"
+    "LWAP_REQ"                  := "" <SUPPRESS> , // hidden, suppressed, value: "16SfC0Zd8Xux73eUxqRKX1ESvPcSvk0DMSIB5bc0jZlf4U
+                                                   // X4SB36GB_39GoR4V9fOBDGCoJZHGpeA18UJXKN-ROVDnc9L8m8VTupWy6NjGClhZaGHWI7bjGz
+                                                   // _Voem5pHOrbdncS4QUR7GjJ2zK6nrg.."
+    "MULTI_DOMAIN_REQ"          := "" <SUPPRESS> , // hidden, suppressed, value: "4c4CBpEGeEYnHdD4x655USTE7TgzMOGLkoI-ZXSOm6pyjT
+                                                   // AYOEGTg1lzyXX_vJ7DCpQ3VJOpJQNMdo99hlm7J3NDnSQQnladGlkaAZp_Dk6PqLaGRKuvTMXo
+                                                   // J2mpNVWAAGWQIjlipdXVF3cNyBAXbnWqd-ucNJlWMEmLow84W9ZwplruMitb0aLLdasOLBcp_f
+                                                   // m8NkI5m2DkTCtC9KJ-Ug.."
+    "LWE"                       := "" <SUPPRESS> , // hidden, suppressed, value: "kFOKkSiHOzFQuUNv38QAzZ_yjYwZHXBkdhtUBa5M8dPho7
+                                                   // iYiX81b6_gphT_dmj0D_56CvY91_hwvfoyb6QA4HiTUwoTKpbmLvr2VJvTy6-DbFvnAMLYeGFc
+                                                   // IqwZMRe3GHn8KE23CWhjVxHXZCp1L7LEQL8q_qMVJF6be3XvxP5-lrxyg9NzrpSt8HmxrmAe"
+    "federateLoginName"         := "" <SUPPRESS> ; // suppressed, value: ""
+
+  FAVICON_VE_SVG007:
+    "ui-version"                := "23.4.40.1";
+
+  OCTANE_SW_JS008:
+    "version"                   := "23.4.40.1";
+
+  G_COLLECT009:
+    "v"                         := "2",
+    "tid"                       := "G-ETCHLMRC87",
+    "gtm"                       := "45je3b81v9104224208",
+    "_p"                        := "1700141375926",
+    "gcd"                       := "11l1l1l1l1",
+    "dma"                       := "0",
+    "cid"                       := "310559645.1700141378",
+    "ul"                        := "de-de",
+    "sr"                        := "1508x1039",
+    "uaa"                       := "x86",
+    "uab"                       := "64",
+    "uafvl"                     := "Google%20Chrome;119.0.6045.159|Chromium;119.0.6045.159|Not%3FA_Brand;24.0.0.0",
+    "uamb"                      := "0",
+    "uam"                       := "",
+    "uap"                       := "Windows",
+    "uapv"                      := "3.0.0",
+    "uaw"                       := "0",
+    "are"                       := "1",
+    "_s"                        := "1",
+    "dt"                        := "-----",
+    "sid"                       := "1700141378",
+    "sct"                       := "1",
+    "seg"                       := "0",
+    "dl"                        := "https://pmo7.almoctane.com/ui/?p=1001%2F1002",
+    "dr"                        := "https://msg-ext.ct-shared.saas.microfocus.com/",
+    "uid"                       := "b4bb16b703c24f2e76216a59daa609aa221015a83daa1b314eae9659d5778f0b",
+    "en"                        := "timing_complete",
+    "_fv"                       := "1",
+    "_nsi"                      := "1",
+    "_ss"                       := "1",
+    "_ee"                       := "1",
+    "ep.name"                   := "load",
+    "epn.value"                 := "3552",
+    "ep.event_category"         := "moduleLoad",
+    "ep.title"                  := "-----",
+    "epn.tenantId"              := "357032996",
+    "ep.tenantType"             := "Test",
+    "tfd"                       := "3562";
+
+  API_SHARED_SPACES_1001_METADATA_010:
+    "query"                     := "\"name='sharedspace_user'||name='integration_type'||name='scm_user'||name='server_version'|"
+                                   "|name='ui_shared_space'||name='role'||name='workspace_role'||name='license_type'||name='wor"
+                                   "kspace'||name='api_access'||name='search_sync_trace'||name='data_visibility_space'||name='a"
+                                   "ction'||name='service_status'||name='sharedspace_external_user'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE011 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27metaphase%27,%27transition%27,%27workspace_user%27,%27business_rule%27"
+                                   ",%27form_layout%27,%27phase%27,%27user_setting%27,%27list_node%27,%27attachment%27,%27templ"
+                                   "ate%27,%27external_credential%27,%27background_task%27,%27data_visibility%27%22";
+
+  API_SHARED_SPACES_1001_METADATA_012 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27workspace%27,%27sharedspace_user%27,%27role%27,%27ui_shared_space%27%2"
+                                   "2";
+
+  API_SHARED_SPACES_1001_WORKSPACE013 <ENCODE_BLANKS> :
+    "fields"                    := "id,workspace_id,name,body,creation_time,entity_subtype,entity_type,is_body_changed,is_defau"
+                                   "lt,master_default_for_new,master_default_for_edit,is_system,last_modified,logical_name,over"
+                                   "ride_key,version_stamp",
+    "limit"                     := "max",
+    "offset"                    := "0",
+    "order_by"                  := "id";
+
+  API_SHARED_SPACES_1001_WORKSPACE014 <ENCODE_BLANKS> :
+    "fields"                    := "is_system,logical_name,is_start_phase,color_hex,description,index,workspace_id,activity_lev"
+                                   "el,name,id,metaphase,entity,original_name,master_phase,sub_phases,master_of_sub_phases_head"
+                                   ",master_of_sub_phases_tail,head_of_sub_phases,tail_of_sub_phases,body_phase,shadow_phase",
+    "use_numeric_id"            := "true";
+
+  API_SHARED_SPACES_1001_WORKSPACE015 <ENCODE_BLANKS> :
+    "fields"                    := "entity,is_primary,is_system,source_phase,target_phase,shared";
+
+  API_SHARED_SPACES_1001_WORKSPACE016 <ENCODE_BLANKS> :
+    "fields"                    := "entity,name,order,is_system",
+    "order_by"                  := "entity,order";
+
+  API_SHARED_SPACES_1001_WORKSPACE017 <ENCODE_BLANKS> :
+    "fields"                    := "logical_name,relevant_phase,category,condition,event_names,order_id,workspace_id,actions,dy"
+                                   "namic_facts,is_active,comment",
+    "include_system"            := "true",
+    "limit"                     := "max",
+    "offset"                    := "0",
+    "order_by"                  := "id";
+
+  API_SHARED_SPACES_1001_ROLES018 <ENCODE_BLANKS> :
+    "fields"                    := "name,logical_name,apply_in_all_wses,manages_shared_content";
+
+  API_SHARED_SPACES_1001_WORKSPACE019:
+    "query"                     := "\"entity_name = 'user_role'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE020:
+    "query"                     := "\"entity_name = 'team'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE021:
+    "query"                     := "\"entity_name = 'ci_build'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE022:
+    "query"                     := "\"entity_name = 'ci_job'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE023:
+    "query"                     := "\"entity_name = 'execution'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE024:
+    "query"                     := "\"entity_name = 'release'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE025 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27executor%27,%27test_runner%27,%27uft_executor%27,%27uft_test_runner%27"
+                                   "%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE026:
+    "query"                     := "\"entity_name = 'ci_server'\"";
+
+  G_COLLECT027:
+    "v"                         := "2",
+    "tid"                       := "G-ETCHLMRC87",
+    "gtm"                       := "45je3b81v9104224208",
+    "_p"                        := "1700141375926",
+    "gcd"                       := "11l1l1l1l1",
+    "dma"                       := "0",
+    "cid"                       := "310559645.1700141378",
+    "ul"                        := "de-de",
+    "sr"                        := "1508x1039",
+    "uaa"                       := "x86",
+    "uab"                       := "64",
+    "uafvl"                     := "Google%20Chrome;119.0.6045.159|Chromium;119.0.6045.159|Not%3FA_Brand;24.0.0.0",
+    "uamb"                      := "0",
+    "uam"                       := "",
+    "uap"                       := "Windows",
+    "uapv"                      := "3.0.0",
+    "uaw"                       := "0",
+    "are"                       := "1",
+    "_s"                        := "2",
+    "dt"                        := "-----",
+    "sid"                       := "1700141378",
+    "sct"                       := "1",
+    "seg"                       := "0",
+    "dl"                        := "https://pmo7.almoctane.com/ui/?p=1001%2F1002",
+    "dr"                        := "https://msg-ext.ct-shared.saas.microfocus.com/",
+    "uid"                       := "b4bb16b703c24f2e76216a59daa609aa221015a83daa1b314eae9659d5778f0b",
+    "en"                        := "user-loaded-language-en",
+    "_ee"                       := "1",
+    "ep.eventCategory"          := "users",
+    "ep.eventAction"            := "user-loaded-language-en",
+    "ep.eventLabel"             := "",
+    "ep.eventValue"             := "",
+    "ep.nonInteraction"         := "",
+    "epn.tenantId"              := "357032996",
+    "ep.tenantType"             := "Test",
+    "_et"                       := "5",
+    "tfd"                       := "8569";
+
+  API_SHARED_SPACES_1001_WORKSPACE028 <ENCODE_BLANKS> :
+    "fields"                    := "scope_type,scope_id,value",
+    "order_by"                  := "id",
+    "query"                     := "%22(application_type%3D%27ALM_WebUI%27;author%3D%7Bid%3D1001%7D)%22" <ENCODE_NONE> ;
+
+  API_SHARED_SPACES_1001_WORKSPACE029 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27work_item%27,%27defect%27,%27feature%27,%27quality_story%27,%27epic%27"
+                                   ",%27work_item_root%27,%27story%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE030:
+    "query"                     := "\"entity_name = 'user_tag'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE031 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27taxonomy_node%27,%27taxonomy_item_node%27,%27taxonomy_category_node%27"
+                                   "%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE032 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27deployment_server%27,%27da_deployment_server%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE033:
+    "query"                     := "\"entity_name = 'sprint'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE034 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27run%27,%27run_suite%27,%27run_automated%27,%27run_manual%27,%27gherkin"
+                                   "_automated_run%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE035:
+    "query"                     := "\"entity_name = 'program'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE036:
+    "query"                     := "\"entity_name = 'report_configuration'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE037 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27team_phase%27,%27expanded_team_phase%27,%27mirror_team_phase%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE038:
+    "query"                     := "\"entity_name = 'bdd_spec'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE039:
+    "query"                     := "\"entity_name = 'scm_commit'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE040:
+    "query"                     := "\"entity_name = 'flag_rule'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE041:
+    "query"                     := "\"entity_name = 'waste'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE042:
+    "query"                     := "\"entity_name = 'pull_request'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE043 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27process%27,%27process_group%27,%27process_action%27,%27release_process"
+                                   "%27,%27release_stage%27,%27query_criterion%27,%27release_process_template%27,%27process_qua"
+                                   "lity_gate%27,%27process_root%27,%27process_auto_action%27,%27user_input_criterion%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE044 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27test%27,%27test_automated%27,%27test_suite%27,%27scenario_test%27,%27t"
+                                   "est_manual%27,%27gherkin_test%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE045 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27scm_resource%27,%27scm_resource_file%27,%27scm_resource_folder%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE046:
+    "query"                     := "\"entity_name = 'data_set'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE047 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27requirement%27,%27requirement_folder%27,%27requirement_root%27,%27requ"
+                                   "irement_document%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE048:
+    "query"                     := "\"entity_name = 'product_area'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE049:
+    "query"                     := "\"entity_name = 'environment'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE050:
+    "query"                     := "\"entity_name = 'task'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE051 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27entity_type%27,%27subtype%27,%27aggregated_entity_type%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE052:
+    "query"                     := "\"entity_name = 'milestone'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE053 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27test_suite_link_to_test%27,%27test_suite_link_to_manual%27,%27test_sui"
+                                   "te_link_to_gherkin%27,%27test_suite_link_to_scenario%27,%27test_suite_link_to_automated%27%"
+                                   "22";
+
+  API_SHARED_SPACES_1001_WORKSPACE054:
+    "query"                     := "\"entity_name = 'scm_repository'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE055:
+    "query"                     := "\"entity_name = 'wip_limit'\"";
+
+  UI_PLATFORM_COMPONENTS_ELASTIC_M056:
+    "ui-version"                := "23.4.40.1";
+
+  API_SHARED_SPACES_1001_SERVICE_S057 <ENCODE_BLANKS> :
+    "fields"                    := "service_id,status";
+
+  API_SHARED_SPACES_1001_WORKSPACE058:
+    ""                          := "",
+    ""                          := "123491",
+    "size"                      := "small";
+
+  UI_PLATFORM_TOUR_VIEWS_SUB_VIEWS059:
+    "ui-version"                := "23.4.40.1";
+
+  API_SHARED_SPACES_1001_WORKSPACE060 <ENCODE_NONE> :
+    "query"                     := "%22entity_name+IN+%27calendar%27,%27main_team_calendar%27,%27main_workspace_calendar%27,%27"
+                                   "main_space_calendar%27,%27workspace_calendar%27%22";
+
+  API_SHARED_SPACES_1001_WORKSPACE061:
+    "query"                     := "\"entity_name = 'favorite'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE062:
+    "query"                     := "\"entity_name = 'team_sprint'\"";
+
+  UI_QUALITY_CENTER_RELEASE_DETAIL063:
+    "ui-version"                := "23.4.40.1";
+
+  API_SHARED_SPACES_1001_WORKSPACE064:
+    "fields"                    := "parent,last_modified,followed_by_me,has_attachments,name,description,detected_by,owner,seve"
+                                   "rity,id,phase,priority,taxonomies,blocked,author,tasks_number,subtype,shared,detected_by%7B"
+                                   "full_name%7D,owner%7Bfull_name%7D,author%7Bfull_name%7D,release%7Bend_date%7D,detected_in_r"
+                                   "elease%7Bend_date%7D,milestone%7Brelease_specific,date,release%7D,parent%7Bsubtype%7D,taxon"
+                                   "omies%7Bsubtype%7D" <ENCODE_NONE> ,
+    "limit"                     := "30",
+    "offset"                    := "0",
+    "order_by"                  := "id",
+    "query"                     := "%22(subtype%3D%27defect%27)%22" <ENCODE_NONE> ;
+
+  API_SHARED_SPACES_1001_WORKSPACE065 <ENCODE_BLANKS> :
+    "fields"                    := "full_name,name,email,activity_level",
+    "limit"                     := "200",
+    "order_by"                  := "first_name,last_name",
+    "query"                     := "%22(activity_level%3D0;is_api_key%3Dfalse)%22" <ENCODE_NONE> ;
+
+  API_SHARED_SPACES_1001_WORKSPACE066 <ENCODE_BLANKS> :
+    "fields"                    := "agile_type,name,programs,activity_level,is_default",
+    "limit"                     := "200",
+    "order_by"                  := "-start_date,name",
+    "query"                     := "\"(activity_level=0)\"" <ENCODE_URICOMPONENT> ;
+
+  API_SHARED_SPACES_1001_WORKSPACE067:
+    "query"                     := "\"entity_name = 'issue'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE068:
+    "query"                     := "\"entity_name = 'pipeline_run'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE069:
+    "query"                     := "\"entity_name = 'ci_parameter_set'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE070:
+    "query"                     := "\"entity_name = 'pipeline'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE071:
+    "query"                     := "\"entity_name = 'application_package'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE072:
+    "query"                     := "\"entity_name = 'scm_repository_root'\"";
+
+  API_SHARED_SPACES_1001_WORKSPACE073 <ENCODE_BLANKS> :
+    "fields"                    := "line,state,id,tool_name,severity,package,remote_id,primary_location_full,analysis,commits,c"
+                                   "ategory",
+    "limit"                     := "30",
+    "offset"                    := "0",
+    "order_by"                  := "id";
+
+  API_SHARED_SPACES_1001_WORKSPACE074 <ENCODE_BLANKS> :
+    "fields"                    := "line,state,id,tool_name,severity,package,remote_id,primary_location_full,analysis,commits,c"
+                                   "ategory",
+    "limit"                     := "30",
+    "offset"                    := "0",
+    "order_by"                  := "id";
+

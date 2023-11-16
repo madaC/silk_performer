@@ -1,0 +1,114 @@
+Silk Performer Error Log
+==============================================
+
+Version........................: Silk Performer 21.0.0.8927 Patch 5
+Project........................: WebProject_1
+Benchmark......................: SilkPerformerRecorder
+BDF file.......................: C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf
+User...........................: VUser-Profile1_1
+Date/time......................: 2023-11-16.14:33:18
+Declared duration of simulation: 00:00:00
+
+---------------------------------- Begin Errors --------------------------------
+
+
+Message(1,WebEngine):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TInit, line: 33, call: 1
+  Time           : 14:33:18 
+  Severity       : informational
+  Internal Error : 40
+  Native Error   : 0
+  Message        : WebSetBrowser(WebEngine: 40 - Browser type setting overwritten by a call to WebSetBrowser()!)
+}
+Message(2,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 145, call: 1
+  Time           : 14:33:23 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/relations")
+}
+Message(3,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 158, call: 1
+  Time           : 14:33:26 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/form_layouts?fields=id,workspace_id,name,body,creation_time,entity_subtype,entity_type,is_body_changed,is_default,master_default_for_new,master_default_for_edit,is_system,last_modified,logical_name,override_key,version_stamp&limit=max&offset=0&order_by=id")
+}
+Message(4,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 170, call: 1
+  Time           : 14:33:28 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/list_nodes/ui_bundle")
+}
+Message(5,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 172, call: 1
+  Time           : 14:33:28 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/business_rules?fields=logical_name,relevant_phase,category,condition,event_names,order_id,workspace_id,actions,dynamic_facts,is_active,comment&include_system=true&limit=max&offset=0&order_by=id")
+}
+Message(6,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 205, call: 1
+  Time           : 14:33:32 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings?fields=scope_type,scope_id,value&order_by=id&query=%22(application_type%3D%27ALM_WebUI%27;author%3D%7Bid%3D1001%7D)%22")
+}
+Message(7,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 293, call: 1
+  Time           : 14:33:44 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/service_statuses?fields=service_id,status")
+}
+Message(8,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 346, call: 1
+  Time           : 14:33:50 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebFormGet(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/issues?fields=line,state,id,tool_name,severity,package,remote_id,primary_location_full,analysis,commits,category&limit=30&offset=0&order_by=id")
+}
+Message(9,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 348, call: 1
+  Time           : 14:33:50 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebFormGet(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/issues?fields=line,state,id,tool_name,severity,package,remote_id,primary_location_full,analysis,commits,category&limit=30&offset=0&order_by=id")
+}
+Message(10,WebEngine):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_2..bdf 
+  Transaction    : TMain, line: 355, call: 1
+  Time           : 14:39:40 
+  Severity       : warning
+  Internal Error : 13
+  Native Error   : 0
+  Message        : WebUrl(WebEngine: 13 - The connection closed gentle or timed out, but earlier than expected.)
+}

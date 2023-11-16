@@ -1,0 +1,1044 @@
+Silk Performer Error Log
+==============================================
+
+Version........................: Silk Performer 21.0.0.8927 Patch 5
+Project........................: WebProject_1
+Benchmark......................: SilkPerformerRecorder
+BDF file.......................: C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf
+User...........................: VUser-Profile1_1
+Date/time......................: 2023-11-16.14:13:50
+Declared duration of simulation: 00:00:00
+
+---------------------------------- Begin Errors --------------------------------
+
+
+Message(1,WebEngine):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TInit, line: 33, call: 1
+  Time           : 14:13:50 
+  Severity       : informational
+  Internal Error : 40
+  Native Error   : 0
+  Message        : WebSetBrowser(WebEngine: 40 - Browser type setting overwritten by a call to WebSetBrowser()!)
+}
+Message(2,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 143, call: 1
+  Time           : 14:13:56 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/relations")
+}
+Message(3,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 143, call: 1
+  Time           : 14:13:56 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(4,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 148, call: 1
+  Time           : 14:13:57 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/entities")
+}
+Message(5,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 148, call: 1
+  Time           : 14:13:57 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(6,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 150, call: 1
+  Time           : 14:13:58 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27metaphase%27,%27transition%27,%27workspace_user%27,%27business_rule%27,%27form_layout%27,%27phase%27,%27user_setting%27,%27list_node%27,%27attachment%27,%27template%27,%27external_credential%27,%27background_task%27,%27data_visibility%27%22")
+}
+Message(7,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 150, call: 1
+  Time           : 14:13:58 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(8,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 153, call: 1
+  Time           : 14:13:59 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/metadata/fields?query=%22entity_name+IN+%27workspace%27,%27sharedspace_user%27,%27role%27,%27ui_shared_space%27%22")
+}
+Message(9,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 153, call: 1
+  Time           : 14:13:59 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/error-pages/error-pages.css")
+}
+Message(10,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 156, call: 1
+  Time           : 14:13:59 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/form_layouts?fields=id,workspace_id,name,body,creation_time,entity_subtype,entity_type,is_body_changed,is_default,master_default_for_new,master_default_for_edit,is_system,last_modified,logical_name,override_key,version_stamp&limit=max&offset=0&order_by=id")
+}
+Message(11,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 162, call: 1
+  Time           : 14:14:00 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/transitions?fields=entity,is_primary,is_system,source_phase,target_phase,shared")
+}
+Message(12,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 162, call: 1
+  Time           : 14:14:00 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/error-pages/error-pages.css")
+}
+Message(13,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 168, call: 1
+  Time           : 14:14:01 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/list_nodes/ui_bundle")
+}
+Message(14,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 168, call: 1
+  Time           : 14:14:01 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(15,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 170, call: 1
+  Time           : 14:14:02 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/business_rules?fields=logical_name,relevant_phase,category,condition,event_names,order_id,workspace_id,actions,dynamic_facts,is_active,comment&include_system=true&limit=max&offset=0&order_by=id")
+}
+Message(16,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 173, call: 1
+  Time           : 14:14:02 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/roles?fields=name,logical_name,apply_in_all_wses,manages_shared_content")
+}
+Message(17,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 173, call: 1
+  Time           : 14:14:02 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/error-pages/error-pages.css")
+}
+Message(18,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 175, call: 1
+  Time           : 14:14:03 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27user_role%27%22")
+}
+Message(19,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 175, call: 1
+  Time           : 14:14:03 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(20,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 181, call: 1
+  Time           : 14:14:04 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27ci_build%27%22")
+}
+Message(21,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 181, call: 1
+  Time           : 14:14:04 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(22,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 184, call: 1
+  Time           : 14:14:04 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27ci_job%27%22")
+}
+Message(23,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 184, call: 1
+  Time           : 14:14:04 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(24,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 190, call: 1
+  Time           : 14:14:05 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27release%27%22")
+}
+Message(25,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 190, call: 1
+  Time           : 14:14:05 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(26,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 196, call: 1
+  Time           : 14:14:06 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27ci_server%27%22")
+}
+Message(27,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 196, call: 1
+  Time           : 14:14:06 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(28,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 203, call: 1
+  Time           : 14:14:07 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings?fields=scope_type,scope_id,value&order_by=id&query=%22(application_type%3D%27ALM_WebUI%27;author%3D%7Bid%3D1001%7D)%22")
+}
+Message(29,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 203, call: 1
+  Time           : 14:14:07 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/error-pages/error-pages.css")
+}
+Message(30,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 206, call: 1
+  Time           : 14:14:07 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27user_tag%27%22")
+}
+Message(31,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 206, call: 1
+  Time           : 14:14:07 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(32,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 209, call: 1
+  Time           : 14:14:08 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27work_item%27,%27defect%27,%27feature%27,%27quality_story%27,%27epic%27,%27work_item_root%27,%27story%27%22")
+}
+Message(33,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 209, call: 1
+  Time           : 14:14:08 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(34,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 212, call: 1
+  Time           : 14:14:08 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27taxonomy_node%27,%27taxonomy_item_node%27,%27taxonomy_category_node%27%22")
+}
+Message(35,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 212, call: 1
+  Time           : 14:14:08 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(36,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 215, call: 1
+  Time           : 14:14:08 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27deployment_server%27,%27da_deployment_server%27%22")
+}
+Message(37,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 215, call: 1
+  Time           : 14:14:08 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(38,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 218, call: 1
+  Time           : 14:14:09 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27sprint%27%22")
+}
+Message(39,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 218, call: 1
+  Time           : 14:14:09 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(40,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 221, call: 1
+  Time           : 14:14:09 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27run%27,%27run_suite%27,%27run_manual%27,%27run_automated%27,%27gherkin_automated_run%27%22")
+}
+Message(41,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 221, call: 1
+  Time           : 14:14:09 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(42,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 224, call: 1
+  Time           : 14:14:09 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27program%27%22")
+}
+Message(43,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 224, call: 1
+  Time           : 14:14:09 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(44,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 227, call: 1
+  Time           : 14:14:10 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27report_configuration%27%22")
+}
+Message(45,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 227, call: 1
+  Time           : 14:14:10 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(46,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 233, call: 1
+  Time           : 14:14:10 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27bdd_spec%27%22")
+}
+Message(47,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 233, call: 1
+  Time           : 14:14:10 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(48,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 236, call: 1
+  Time           : 14:14:11 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27scm_commit%27%22")
+}
+Message(49,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 236, call: 1
+  Time           : 14:14:11 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(50,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 242, call: 1
+  Time           : 14:14:12 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27waste%27%22")
+}
+Message(51,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 242, call: 1
+  Time           : 14:14:12 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(52,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 245, call: 1
+  Time           : 14:14:12 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27pull_request%27%22")
+}
+Message(53,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 245, call: 1
+  Time           : 14:14:12 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(54,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 251, call: 1
+  Time           : 14:14:13 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27test%27,%27test_automated%27,%27test_suite%27,%27scenario_test%27,%27test_manual%27,%27gherkin_test%27%22")
+}
+Message(55,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 251, call: 1
+  Time           : 14:14:13 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(56,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 254, call: 1
+  Time           : 14:14:13 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27scm_resource%27,%27scm_resource_file%27,%27scm_resource_folder%27%22")
+}
+Message(57,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 254, call: 1
+  Time           : 14:14:13 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(58,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 257, call: 1
+  Time           : 14:14:14 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27data_set%27%22")
+}
+Message(59,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 257, call: 1
+  Time           : 14:14:14 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(60,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 260, call: 1
+  Time           : 14:14:14 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27requirement%27,%27requirement_folder%27,%27requirement_root%27,%27requirement_document%27%22")
+}
+Message(61,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 260, call: 1
+  Time           : 14:14:14 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(62,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 263, call: 1
+  Time           : 14:14:14 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27product_area%27%22")
+}
+Message(63,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 263, call: 1
+  Time           : 14:14:14 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(64,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 266, call: 1
+  Time           : 14:14:15 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27environment%27%22")
+}
+Message(65,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 266, call: 1
+  Time           : 14:14:15 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(66,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 269, call: 1
+  Time           : 14:14:15 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27task%27%22")
+}
+Message(67,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 269, call: 1
+  Time           : 14:14:15 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(68,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 272, call: 1
+  Time           : 14:14:16 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27entity_type%27,%27subtype%27,%27aggregated_entity_type%27%22")
+}
+Message(69,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 272, call: 1
+  Time           : 14:14:16 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(70,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 275, call: 1
+  Time           : 14:14:16 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27milestone%27%22")
+}
+Message(71,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 275, call: 1
+  Time           : 14:14:16 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(72,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 278, call: 1
+  Time           : 14:14:16 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+IN+%27test_suite_link_to_test%27,%27test_suite_link_to_manual%27,%27test_suite_link_to_gherkin%27,%27test_suite_link_to_scenario%27,%27test_suite_link_to_automated%27%22")
+}
+Message(73,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 278, call: 1
+  Time           : 14:14:16 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(74,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 281, call: 1
+  Time           : 14:14:17 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27scm_repository%27%22")
+}
+Message(75,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 281, call: 1
+  Time           : 14:14:17 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(76,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 284, call: 1
+  Time           : 14:14:17 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27wip_limit%27%22")
+}
+Message(77,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 284, call: 1
+  Time           : 14:14:17 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(78,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 287, call: 1
+  Time           : 14:14:17 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/ui/platform/components/elastic-maintenance-warning-component/elastic-maintenance-warning-component.html?ui-version=23.4.40.1")
+}
+Message(79,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 287, call: 1
+  Time           : 14:14:17 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/ui/platform/components/error-pages/error-pages.css")
+}
+Message(80,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 292, call: 1
+  Time           : 14:14:18 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/service_statuses?fields=service_id,status")
+}
+Message(81,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 292, call: 1
+  Time           : 14:14:18 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageAddUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/ui/generated/webpack/fonts/6f69d99b9b0706a2a955ed42d64742a1.roboto-v20-latin-ext_cyrillic_latin-500.woff2")
+}
+Message(82,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 296, call: 1
+  Time           : 14:14:19 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/workspace_users/1001/avatar?101309&size=small")
+}
+Message(83,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 296, call: 1
+  Time           : 14:14:19 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageAddUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/workspace_users/error-pages/error-pages.css")
+}
+Message(84,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 296, call: 1
+  Time           : 14:14:19 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageAddUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/ui/generated/webpack/fonts/f3501dc6e4b56028379328ddd8f0129f.roboto-v20-latin-ext_cyrillic_latin-700.woff2")
+}
+Message(85,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 302, call: 1
+  Time           : 14:14:20 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27favorite%27%22")
+}
+Message(86,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 302, call: 1
+  Time           : 14:14:20 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(87,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 305, call: 1
+  Time           : 14:14:20 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields?query=%22entity_name+%3D+%27team_sprint%27%22")
+}
+Message(88,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 305, call: 1
+  Time           : 14:14:20 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/error-pages/error-pages.css")
+}
+Message(89,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 311, call: 1
+  Time           : 14:14:20 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/ui/platform/tour/views/sub-views/new-format-json-whats-new/whats-new-saas-en.json?ui-version=23.4.40.1")
+}
+Message(90,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 311, call: 1
+  Time           : 14:14:20 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/ui/platform/tour/views/sub-views/error-pages/error-pages.css")
+}
+Message(91,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 319, call: 1
+  Time           : 14:14:21 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/work_items?fields=parent,last_modified,followed_by_me,has_attachments,name,description,detected_by,owner,severity,id,phase,priority,taxonomies,blocked,author,tasks_number,subtype,shared,detected_by%7Bfull_name%7D,owner%7Bfull_name%7D,author%7Bfull_name%7D,release%7Bend_date%7D,detected_in_release%7Bend_date%7D,milestone%7Brelease_specific,date,release%7D,parent%7Bsubtype%7D,taxonomies%7Bsubtype%7D
+}
+Message(92,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 319, call: 1
+  Time           : 14:14:21 
+  Severity       : warning
+  Internal Error : 1404
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 1404 - server error 404 - embedded object not found, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/error-pages/error-pages.css")
+}
+Message(93,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 322, call: 1
+  Time           : 14:14:21 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/workspace_users?fields=full_name,name,email,activity_level&limit=200&order_by=first_name,last_name&query=%22(activity_level%3D0;is_api_key%3Dfalse)%22")
+}
+Message(94,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 322, call: 1
+  Time           : 14:14:21 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/error-pages/error-pages.css")
+}
+Message(95,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 336, call: 1
+  Time           : 14:14:22 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebCustomRequestBin(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings?fields=id&query=%22(scope_type%3D%27application%27;scope_id%3D%27WebUI%27;author%3D%7Bid%3D1001%7D)%22")
+}
+Message(96,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 378, call: 1
+  Time           : 14:14:22 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebCustomRequestBin(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings?fields=id&query=%22(scope_type%3D%27module%27;scope_id%3D%27my-items%27;author%3D%7Bid%3D1001%7D)%22")
+}
+Message(97,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 381, call: 1
+  Time           : 14:14:23 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebCustomRequestBin(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/user_settings?fields=id&query=%22(scope_type%3D%27module%27;scope_id%3D%27defects%27;author%3D%7Bid%3D1001%7D)%22")
+}
+Message(98,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 411, call: 1
+  Time           : 14:14:24 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/audits/action_types")
+}
+Message(99,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 411, call: 1
+  Time           : 14:14:24 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageAddUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/relations")
+}
+Message(100,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 419, call: 1
+  Time           : 14:14:25 
+  Severity       : error
+  Internal Error : 400
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 400 - invalid syntax, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/metadata/fields/auditable")
+}
+Message(101,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 424, call: 1
+  Time           : 14:14:25 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/service_statuses?fields=service_id,status")
+}
+Message(102,HTTP):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 457, call: 1
+  Time           : 14:14:28 
+  Severity       : error
+  Internal Error : 403
+  Native Error   : 0
+  Message        : WebPageUrl(HTTP: 403 - request forbidden, URL: "https://pmo7.almoctane.com/api/shared_spaces/1001/workspaces/1002/business_rules?fields=logical_name,relevant_phase,category,condition,event_names,order_id,workspace_id,actions,dynamic_facts,is_active,comment,external_credential&limit=max&offset=0&order_by=id")
+}
+Message(103,WebEngine):
+{
+  Script Name    : C:\Users\Administrator\Documents\Silk Performer 21.0\Projects\WebProject_1\WebProject_1.bdf 
+  Transaction    : TMain, line: 466, call: 1
+  Time           : 14:18:19 
+  Severity       : warning
+  Internal Error : 13
+  Native Error   : 0
+  Message        : WebUrl(WebEngine: 13 - The connection closed gentle or timed out, but earlier than expected.)
+}
